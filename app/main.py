@@ -16,10 +16,5 @@ def root():
     }
 
 
-@app.get("/health")
-def health_check():
-    return {
-        "status": "healthy"
-    }
 
 app.include_router(events_router)
